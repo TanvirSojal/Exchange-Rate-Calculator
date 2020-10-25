@@ -1,0 +1,39 @@
+/* fonts import  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+
+:root {
+  --text-dark: #1c2b2d;
+  --text-gray: #686d76;
+  --accent-light: #f6f5f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.topbar h1 {
+  text-align: center;
+  color: var(--text-dark);
+  font-family: "Playfair Display", serif;
+  font-size: xx-large;
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
+}
+
+.topbar p {
+  font-family: "PT Sans", sans-serif;
+  color: var(--text-gray);
+}
+
+.topbar {
+  text-align: center;
+  background-color: var(--accent-light);
+}
+
+img {
+  width: 100px;
+  margin: 20px;
+}
