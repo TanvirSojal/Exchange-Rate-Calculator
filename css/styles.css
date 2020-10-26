@@ -24,7 +24,7 @@ img {
 body {
   font-family: "PT Sans", sans-serif;
   color: var(--text-gray);
-  /* overflow: hidden; */
+  overflow: hidden;
 }
 
 .topbar {
