@@ -6,6 +6,8 @@
   --text-dark: #1c2b2d;
   --text-gray: #686d76;
   --accent-light: #f6f5f5;
+  --accent-maroon: #b64040;
+  --accent-yellow: #ffcb04;
 }
 
 * {
@@ -14,18 +16,15 @@
   box-sizing: border-box;
 }
 
-.topbar h1 {
-  text-align: center;
-  color: var(--text-dark);
-  font-family: "Playfair Display", serif;
-  font-size: xx-large;
-  margin-bottom: 20px;
-  letter-spacing: 0.4px;
+img {
+  width: 100px;
+  margin: 20px;
 }
 
-.topbar p {
+body {
   font-family: "PT Sans", sans-serif;
   color: var(--text-gray);
+  /* overflow: hidden; */
 }
 
 .topbar {
@@ -33,7 +32,82 @@
   background-color: var(--accent-light);
 }
 
-img {
-  width: 100px;
+.topbar h1 {
+  color: var(--text-dark);
+  font-family: "Playfair Display", serif;
+  font-size: x-large;
+  margin-bottom: 20px;
+  letter-spacing: 0.4px;
+}
+
+.calculator {
+  margin-top: 40px;
+}
+
+.currency {
   margin: 20px;
+  padding: 4px;
+}
+
+select {
+  margin: 10px;
+}
+
+input {
+  width: 100%;
+  text-align: right;
+  font-size: x-large;
+  color: var(--text-dark);
+  border: none;
+  border-radius: 3px;
+  background-color: var(--accent-light);
+  margin: 10px;
+  padding: 2px 12px;
+}
+
+#output {
+  text-align: right;
+  font-size: x-large;
+  color: var(--text-dark);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input:focus,
+button:focus,
+button:active {
+  outline: none;
+}
+
+.info {
+  margin: 12px;
+}
+
+.button-swap {
+  font-weight: bold;
+  outline: none;
+  margin: 10px;
+  width: 100%;
+  background-color: var(--accent-yellow);
+}
+
+.button-swap:hover {
+  background-color: var(--text-gray);
+  color: var(--accent-light);
+}
+
+.button-swap:active {
+  background-color: var(--text-dark);
+}
+
+h4 {
+  margin: 18px 10px 10px 10px;
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+  color: var(--accent-maroon);
 }
